@@ -1,0 +1,436 @@
+.menu-nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: black;
+}
+
+.menu-logo {
+    width: 10%;
+    height: 5%;
+}
+
+.menu-logo a {
+    height: inherit;
+}
+
+.menu-logo img {
+    width: 150px;
+    height: inherit;
+}
+
+.menu-links {
+    height: 5%;
+    width: 90%;
+}
+
+.menu-links-lista {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10% 0 0;
+    padding: 0;
+}
+
+.menu-links-item {
+    width: auto;
+    padding: 5px;
+    margin: 20px;
+    list-style-type: none;
+    color: orange;
+}
+
+.menu-links-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu-links-item a:hover {
+    color: white;
+}
+
+.botao-reserva {
+    position:absolute;
+    z-index:1;
+    top:50%;
+    left:50%;
+    width:200px;
+    height:70px;
+    padding:5px;
+    background-color: orange;
+    margin:-15px 0 0 -100px; 
+    border: solid 2px black;
+    border-radius: 10px;
+}
+
+.botao-reserva a {
+    text-decoration: none;
+    color: black;
+    font-weight:500;
+    font-size: 15pt;
+}
+
+.botao-reserva a:hover {
+    text-transform: uppercase;
+}
+
+.carousel .carousel-item {
+    height: 800px;
+}
+  
+.carousel-item img {
+      position: absolute;
+      object-fit: cover;
+      top: 0;
+      left: 0;
+      min-height: 800px;
+}
+
+.footer-principal {
+    width: 100%;
+    background-color: black;
+}
+
+.footer-links {
+    display: flex;
+    width: inherit;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-links img {
+    width: 30px;
+    margin: 30px 10px;
+}
+
+.footer-links div {
+    font-size: 8pt;
+    color: white;
+    margin: 0 20px;
+}
+
+.footer-links p {
+    margin: 0;
+    padding: 0;
+}
+
+.reserva-main {
+    background-image: url(/imagens/reserva_bg.jpg) !important;
+    background-size: cover;
+    font-family: "Inter", sans-serif;
+    font-size: 11pt;
+}
+
+.reserva-main main {
+    background-color: black;
+    margin: 7.5% auto;
+    width: 40%;
+}
+
+.reserva-logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.reserva-logo img {
+    width: 200px;
+}
+
+.reserva-formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.reserva-formulario p {
+    color: white;
+}
+
+.reserva-formulario-campos {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    width: 80%;
+}
+
+.reserva-formulario-campos label {
+    color: white;
+    margin: 10px 0 5px 0;
+    padding: 0 0 0 5px;
+}
+
+.reserva-formulario-campos input {
+    height: 25px;
+    border-radius: 5px;
+}
+
+.reserva-formulario-campos select {
+    height: 25px;
+    border-radius: 5px;
+}
+
+.reserva-agora-botao {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0 0;
+}
+
+.reserva-agora-botao > input {
+    width:250px;
+    height:50px;
+    padding:5px;
+    background-color: orange;
+    border: solid 2px black;
+    border-radius: 5px;
+    color: black;
+    font-weight:500;
+    font-size: 14pt;
+}
+
+.container {
+display: flex;
+justify-content: space-around;
+padding: 10px;
+margin-bottom: 10px;
+
+}
+
+.unidades-principal {
+    background-color: black;
+}
+
+.unidades-titulos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    color: white;
+}
+
+.unidades-titulos h1 {
+    font-size: 32pt;
+}
+
+.unidades-titulos h2 {
+    font-size: 22pt;
+}
+
+.unidades-secao {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 10%;
+}
+
+.unidades-secao div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: auto;
+}
+
+.unidades-secao h6 {
+    color: white;
+    margin: 0 0 25px 0;
+}
+
+.unidades-secao img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border: solid 0.1px white;
+}
+
+.unidades-secao iframe {
+    width: 100%;
+    height: 100px;
+    margin: 20px 0 0 0;
+}
+
+.unidades-secao ul {
+    font-size: 10pt;
+    color: white;
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+
+.unidades-secao li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagemdefundo {
+    background-image: url(/imagens/contato.jpg);
+    background-size: cover;
+    font-family: "Inter", sans-serif;
+    font-size: 11pt;
+}
+
+.imagemdefundo main {
+    background-color: black;
+    margin: 7.5% auto;
+    width: 40%;
+    height: 600px;
+    padding: 80px 0 40px 0;
+}
+
+
+.listadecontato {
+    width: 70%;
+    margin: auto;
+}
+
+.listadecontato li {
+    color: white;
+    margin: 20px 0;
+    list-style-type: disc;
+}
+
+
+.trabalheconosco{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    margin-top:180px;
+    padding-left: 0px;
+
+
+    
+}
+
+.trabalheconosco li {
+
+    margin-left: 30px ;
+    margin-right: 30px;
+}
+
+
+.sobre-principal {
+    background-color: black;
+}
+
+
+.sobre-titulo {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    color: orange;
+}
+
+.sobre-imagem{
+
+    width:30%;
+ 
+
+}
+
+.sobre-imagem img{
+
+    width: 100%;
+    height: 650px;
+    margin-left:10%;
+    object-fit: cover;
+    border: solid 0.1px white;
+
+
+}
+
+.sobre{
+
+    display:flex;
+    justify-content:space-evenly;
+    object-fit: cover;
+    width: 100%;
+    font-size: 16pt;
+    color:white;
+    margin: 30px 0;
+
+
+
+}
+
+.sobre-texto {
+
+    width: 30%;
+    margin-top: 100px;
+    
+
+}
+
+.sobre-texto p {
+
+    margin-bottom: 50px;
+}
+
+
+.cardapio-titulo  {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    color: orange;
+
+
+}
+
+.fundo-cardapio {
+    background-color: black;
+}
+
+
+.cardapio-container {
+    display: flex;
+    justify-content:center;
+    flex-wrap: nowrap;
+    align-items: start;
+    width: 80%;
+    margin: 5% 10%;
+}
+
+.item {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    width: 30%;
+}
+
+.item img{
+    width:40%;
+}
+
+.item div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.item h3 {
+    color: white;
+    margin: 0 0 25px 0;
+    text-align: center;
+}
+
+.item p {
+    color: white;
+    margin: 0 0 25px 0;
+    text-align: center;
+}
