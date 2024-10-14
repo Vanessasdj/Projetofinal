@@ -1,3 +1,5 @@
+/* início do código do header */
+
 .menu-nav {
     width: 100%;
     display: flex;
@@ -28,7 +30,7 @@
 .menu-links-lista {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     margin: 0 10% 0 0;
@@ -41,6 +43,7 @@
     margin: 20px;
     list-style-type: none;
     color: orange;
+    font-size: 14pt;
 }
 
 .menu-links-item a {
@@ -51,6 +54,60 @@
 .menu-links-item a:hover {
     color: white;
 }
+
+/* design responsivo do header começa aqui */
+
+@media (max-width: 480px) {
+    .menu-logo {
+        width: auto;
+    }
+
+    .menu-logo img {
+        width: 75px;
+        height: inherit;
+    }
+    
+    .menu-links {
+        height: 5%;
+        width: 90%;
+    }
+    
+    .menu-links-lista {
+        margin: 0;
+    }
+    
+    .menu-links-item {
+        margin: 0;
+        font-size: 11pt;
+    }
+
+    .menu-links-item:first-child {
+        display: none;
+    }
+}
+
+@media (min-width:481px) and (max-width: 768px) {
+    .menu-logo img {
+        width: 100px;
+    }
+    
+    .menu-links-item {
+        margin: 0;
+        font-size: 12pt;
+    }
+}
+
+@media (min-width:769px) and (max-width: 1024px) {
+    
+    .menu-links-item {
+        margin: 1%;
+        font-size: 12pt;
+    }
+}
+
+/* fim do código do header */
+
+/* início do código main da página index */
 
 .botao-reserva {
     position:absolute;
@@ -89,6 +146,10 @@
       min-height: 800px;
 }
 
+/* fim do código main da página index */
+
+/* início do código do footer */
+
 .footer-principal {
     width: 100%;
     background-color: black;
@@ -116,6 +177,10 @@
     margin: 0;
     padding: 0;
 }
+
+/* fim do código do footer */
+
+/* início do código main da página reservas */
 
 .reserva-main {
     background-image: url(/imagens/reserva_bg.jpg) !important;
@@ -150,6 +215,7 @@
 
 .reserva-formulario p {
     color: white;
+    margin: 0 10%;
 }
 
 .reserva-formulario-campos {
@@ -193,6 +259,64 @@
     font-size: 14pt;
 }
 
+/* design responsivo da pagina reservas começa aqui */
+
+@media (max-width: 480px) {
+    .reserva-main {
+        font-size: 9pt;
+    }
+
+    .reserva-main main {
+        width: 90%;
+    }
+    
+    .reserva-logo img {
+        width: 150px;
+    }
+
+    .reserva-formulario p {
+        margin: 0 10%;
+    }
+}
+
+@media (min-width:481px) and (max-width: 768px) {
+    .reserva-main {
+        font-size: 9pt;
+    }
+
+    .reserva-main main {
+        width: 90%;
+    }
+    
+    .reserva-logo img {
+        width: 150px;
+    }
+
+    .reserva-formulario p {
+        margin: 0 10%;
+    }
+}
+
+@media (min-width:769px) and (max-width: 1024px) {
+    .reserva-main {
+        font-size: 9pt;
+    }
+
+    .reserva-main main {
+        width: 90%;
+    }
+    
+    .reserva-logo img {
+        width: 150px;
+    }
+
+    .reserva-formulario p {
+        margin: 0 10%;
+    }
+}
+
+/* fim do código main da página cardapio */
+
 .container {
 display: flex;
 justify-content: space-around;
@@ -200,6 +324,8 @@ padding: 10px;
 margin-bottom: 10px;
 
 }
+
+/* início do código main da página unidades */
 
 .unidades-principal {
     background-color: black;
@@ -269,6 +395,86 @@ margin-bottom: 10px;
     align-items: center;
 }
 
+/* design responsivo da pagina unidades começa aqui */
+
+@media (max-width: 480px) {
+    .unidades-titulos {
+        margin: 7.5% 0;
+    }
+    
+    .unidades-titulos h1 {
+        font-size: 26pt;
+    }
+    
+    .unidades-titulos h2 {
+        font-size: 16pt;
+    }
+    
+    .unidades-secao {
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+    }
+    
+    .unidades-secao div {
+        width: 85%;
+    }
+    
+    .unidades-secao h6 {
+        margin: 20px 0;
+    }
+}
+
+@media (min-width:481px) and (max-width: 768px) {
+    .unidades-titulos {
+        margin: 5% 0;
+    }
+
+    .unidades-titulos h1 {
+        font-size: 26pt;
+    }
+    
+    .unidades-titulos h2 {
+        font-size: 16pt;
+    }
+    
+    .unidades-secao {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 10%;
+    }
+    
+    .unidades-secao div {
+        width: 85%;
+    }
+    
+    .unidades-secao h6 {
+        margin: 20px 0;
+    }
+}
+
+@media (min-width:769px) and (max-width: 1024px) {
+    .unidades-secao {
+        margin: 0 5%;
+    }
+    
+    .unidades-secao div {
+        width: 30%;
+    }
+    
+    .unidades-secao h6 {
+        margin: 20px 0;
+    }
+    
+    .unidades-secao p {
+        padding: 0 10px;
+    }
+}
+
+/* fim do código main da página unidades */
+
+/* início do código main da página contato */
+
 .imagemdefundo {
     background-image: url(/imagens/contato.jpg);
     background-size: cover;
@@ -280,7 +486,7 @@ margin-bottom: 10px;
     background-color: black;
     margin: 7.5% auto;
     width: 40%;
-    height: 600px;
+    height: auto;
     padding: 80px 0 40px 0;
 }
 
@@ -316,6 +522,147 @@ margin-bottom: 10px;
     margin-right: 30px;
 }
 
+/* design responsivo da pagina contato começa aqui */
+
+@media (max-width: 480px) {
+    .imagemdefundo {
+        background-size: auto 100%;
+        background-position-x: 45%;
+    }
+    
+    .imagemdefundo main {
+        margin: 7.5% 5%;
+        width: 90%;
+        padding: 15px 0;
+        height: auto;
+    }
+    
+    .listadecontato {
+        width: 90%;
+        padding: 0 0 0 70px;
+    }
+
+    .listadecontato li {
+        margin: 50px 0;
+    }
+    
+    .listadecontato h5 {
+        font-size: 11pt;
+    }
+    
+    .trabalheconosco {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+        margin: 15px 15px 15px;
+    }
+
+    .trabalheconosco li {
+        width: 50%;
+        margin: 0;
+    }
+
+    .trabalheconosco h6 {
+        font-size: 10pt;
+    }
+}
+
+@media (min-width:481px) and (max-width: 768px) {
+    .imagemdefundo {
+        background-size: auto 100%;
+        background-position-x: 45%;
+    }
+    
+    .imagemdefundo main {
+        margin: 7.5% 5%;
+        width: 90%;
+        padding: 15px 0;
+        height: auto;
+    }
+    
+    .listadecontato {
+        width: 90%;
+        padding: 0 0 0 100px;
+    }
+
+    .listadecontato li {
+        margin: 50px 0;
+    }
+    
+    .listadecontato h5 {
+        font-size: 11pt;
+    }
+    
+    .trabalheconosco {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+        margin: 15px 15px 15px;
+    }
+
+    .trabalheconosco li {
+        width: 50%;
+        margin: 0;
+    }
+
+    .trabalheconosco h6 {
+        font-size: 10pt;
+    }
+}
+
+@media (min-width:769px) and (max-width: 1024px) {
+    .imagemdefundo {
+        background-size: auto 100%;
+        background-position-x: 45%;
+    }
+    
+    .imagemdefundo main {
+        margin: 7.5% 5%;
+        width: 90%;
+        padding: 15px 0;
+        height: auto;
+    }
+    
+    .listadecontato {
+        width: 90%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .listadecontato li {
+        margin: 25px 0;
+    }
+    
+    .listadecontato h5 {
+        font-size: 11pt;
+    }
+    
+    .trabalheconosco {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+        margin: 15px 15px 15px;
+    }
+
+    .trabalheconosco li {
+        width: 50%;
+        margin: 0;
+    }
+
+    .trabalheconosco h6 {
+        font-size: 10pt;
+    }
+}
+
+/* fim do código main da página contato */
+
+/* início do código main da página sobre */
 
 .sobre-principal {
     background-color: black;
@@ -344,7 +691,6 @@ margin-bottom: 10px;
     width: 100%;
     height: 650px;
     margin-left:10%;
-    object-fit: cover;
     border: solid 0.1px white;
 
 
@@ -377,6 +723,103 @@ margin-bottom: 10px;
     margin-bottom: 50px;
 }
 
+/* design responsivo da pagina unidades começa aqui */
+
+@media (max-width: 480px) {
+    .sobre-titulo {
+        margin: 25px 0;
+    }
+    
+    .sobre-imagem{
+        width:100%;
+    }
+    
+    .sobre-imagem img{
+        width: 80%;
+        height: 300px;
+        margin: 0 10%;
+    }
+    
+    .sobre{
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        font-size: 13pt;
+    }
+    
+    .sobre-texto {
+        width: 90%;
+        margin: 15px 0 0 0;
+        text-align: justify;
+    }
+    
+    .sobre-texto p {
+        margin: 0 0 20px 0;
+    }
+}
+
+@media (min-width:481px) and (max-width: 768px) {
+    .sobre-titulo {
+        margin: 25px 0;
+    }
+    
+    .sobre-imagem{
+        width:100%;
+    }
+    
+    .sobre-imagem img{
+        width: 80%;
+        height: 300px;
+        margin: 0 10%;
+        object-position: 50% 35%;
+    }
+    
+    .sobre{
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        font-size: 13pt;
+    }
+    
+    .sobre-texto {
+        width: 90%;
+        margin: 15px 0 0 0;
+        text-align: justify;
+    }
+    
+    .sobre-texto p {
+        margin: 0 0 20px 0;
+    }
+}
+
+@media (min-width:769px) and (max-width: 1024px) {
+    .sobre-titulo {
+        margin: 40px 0;
+    }
+    
+    .sobre-imagem{
+        width:40%;
+    }
+    
+    .sobre-imagem img{
+        height: auto;
+        margin: 0;
+    }
+    
+    .sobre-texto {
+        width: 40%;
+        margin: 0;    
+    }
+    
+    .sobre-texto p {
+        margin: 0 0 30px 0;
+        text-align: justify;
+    }
+}
+
+/* fim do código main da página sobre */
+
+/* início do código main da página cardapio */
 
 .cardapio-titulo  {
 
@@ -434,3 +877,122 @@ margin-bottom: 10px;
     margin: 0 0 25px 0;
     text-align: center;
 }
+
+/* design responsivo da pagina unidades começa aqui */
+
+@media (max-width: 480px) {
+    .cardapio-titulo  {
+        margin: 20px 0 30px 0;
+    }
+
+    .cardapio-titulo h2 {
+        font-size: 20pt;
+    }
+
+    .cardapio-titulo h3 {
+        font-size: 16pt;
+    }
+
+    .cardapio-titulo h3 {
+        font-size: 13pt;
+    }
+    
+    .cardapio-container {
+        flex-direction: column;
+        margin: 0 10%;
+    }
+    
+    .item {
+        margin: 0 0 10px 0;
+        width: auto;
+    }
+    
+    .item img{
+        width:50%;
+    }
+
+    .item h3 {
+        padding: 0 15px;
+    }
+    
+    .item p {
+        padding: 0 15px;
+    }
+}
+
+@media (min-width:481px) and (max-width: 768px) {
+    .cardapio-titulo  {
+        margin: 20px 0 30px 0;
+    }
+
+    .cardapio-titulo h2 {
+        font-size: 24pt;
+    }
+
+    .cardapio-titulo h3 {
+        font-size: 18pt;
+    }
+
+    .cardapio-titulo h3 {
+        font-size: 15pt;
+    }
+    
+    .cardapio-container {
+        flex-direction: column;
+        width: auto;
+        margin: 0 15%;
+    }
+    
+    .item {
+        margin: 0 0 10px 0;
+        width: auto;
+    }
+    
+    .item img{
+        width:50%;
+    }
+
+    .item h3 {
+        padding: 0 15px;
+    }
+    
+    .item p {
+        padding: 0 15px;
+    }
+}
+
+@media (min-width:769px) and (max-width: 1024px) {
+    .cardapio-titulo  {
+        margin: 30px 0;
+    } 
+    
+    .cardapio-container {
+        width: 100%;
+        margin: 5% 0%;
+        align-items: baseline;
+    }
+    
+    .item {
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+        width: 30%;
+    }
+
+    .item img {
+        width: 50%;
+    }
+    
+    .item h3 {
+        font-size: 14pt;
+        margin: 0 0 15px 0;
+        padding: 0 5px;
+    }
+    
+    .item p {
+        font-size: 10pt;
+        padding: 0 10px;
+    }
+}
+
+/* fim do código main da página cardapio */
